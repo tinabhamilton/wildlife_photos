@@ -1,0 +1,14 @@
+
+<div class="jumbotron">
+  <center>
+    <h1><%= @wildlife.name %></h1>
+    <img src="<%= @wildlife.image %>">
+  </center>
+  <h3>Name: <%= @wildlife.name %></h3>
+  <h3>Size: <%= @wildlife.size %></h3>
+  <h3>Copies: <%= @wildlife.copies %></h3>
+  <h3>Cost: $<%= @wildlife.cost %></h3>
+
+  <%= link_to "Edit wildlife", edit_wildlife_path, class:"btn btn-primary" %>
+ 
+</div>

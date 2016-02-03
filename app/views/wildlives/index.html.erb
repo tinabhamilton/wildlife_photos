@@ -1,0 +1,21 @@
+html
+<h1>All of our Wildlife Photos</h1>
+<div class="row">
+<% @wildlives.each do |wildlife| %>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="<%= wildlife.image %>">
+      <div class="caption">
+        <h3><%= wildlife.name %></h3>
+        <h3>Cost: $<%= wildlife.cost %></h3>
+        <%= link_to "More Info", wildlife, class: "btn btn-default" %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+
+<br>
+
+<%= link_to 'New Photo', new_wildlife_path, class: "btn btn-primary" %>
+
