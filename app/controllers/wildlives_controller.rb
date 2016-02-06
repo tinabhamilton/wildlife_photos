@@ -70,6 +70,6 @@ class WildlivesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def wildlife_params
-      params.require(:wildlife).permit(:name, :size, :copies, :cost, :image)
+      params.require(:wildlife).permit(:name, :size, :copies, :image)
     end
 end
